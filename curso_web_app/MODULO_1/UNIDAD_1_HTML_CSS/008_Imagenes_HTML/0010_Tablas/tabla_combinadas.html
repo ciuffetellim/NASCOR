@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tablas combinadas</title>
+    <style>
+        table {
+            width: 100%;
+            border: solid 1px;
+        }
+        .cabecera {
+            background-color: #f2f2f2;
+        }
+
+        tr,
+        th,
+        td {
+            border: solid 1px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr class="cabecera">
+            <th rowspan="2">Nombre</th>
+            <th colspan="2">Contactos</th>
+            <th rowspan="2">Direccion</th>
+        </tr>
+        <tr class="cabecera">
+            
+            <td>Email</td>
+            <td>Telefono</td>
+        </tr>
+        <tr>
+            <td>Juan Perez</td>
+            <td>jua@ggg.com</td>
+            <td>+34888888888</td>
+            <td rowspan="2">calle ooooooooo 122, Madrid</td>
+        </tr>
+        <tr>
+            <td>Ann Garcia</td>
+            <td>anna@ggggg.com</td>
+            <td>+34999999999</td>
+        </tr>
+        <tr>
+            <td>Pedro Lopez</td>
+            <td colspan="2">pedro@gggg.com</td>
+            <td>Ave siempre viva 456, Barcelona</td>
+        </tr>
+
+
+
+    </table>
+
+</body>
+
+</html>
