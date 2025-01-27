@@ -10,6 +10,7 @@
             width: 50%;
             margin: 0 auto;
         }
+        
 
         fieldset {
             margin-bottom: 20px;
@@ -42,6 +43,7 @@
 
 <body>
     <div id="contenedor">
+        
         <form id="formulario" name="formulario" action="#" method="post">
             <fieldset id="datos personales">
                 <legend>Datos Personales</legend>
@@ -64,8 +66,9 @@
                 <input type="tel" id="telefono" name="telefono" required><br>
                 <label for="direccion" id="direccion">Direccion:</label><br>
                 <textarea rows="5" name="direccion" id="direccion"></textarea>
-                
+  
             </fieldset>
+            <input type="submit" value="Enviar">&nbsp;&nbsp;<input type="reset" value="Limpiar">
         </form>
     </div>
 </body>
