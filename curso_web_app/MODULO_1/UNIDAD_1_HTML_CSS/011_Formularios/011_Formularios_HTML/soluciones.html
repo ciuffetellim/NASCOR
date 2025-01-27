@@ -26,6 +26,12 @@
 
         input {
             margin-bottom: 10px;
+        }
+        textarea {
+            margin-bottom: 10px;
+            width: 100%;
+        }
+
     </style>
 
 <head>
@@ -56,8 +62,9 @@
                 <input type="email" id="email" name="email" required><br>
                 <label for="telefono">Telefono:</label><br>
                 <input type="tel" id="telefono" name="telefono" required><br>
-                <label for="direccion">Direccion:</label><br>
-                <input type="text" id="direccion" name="direccion" required><br>
+                <label for="direccion" id="direccion">Direccion:</label><br>
+                <textarea rows="5" name="direccion" id="direccion"></textarea>
+                
             </fieldset>
         </form>
     </div>
