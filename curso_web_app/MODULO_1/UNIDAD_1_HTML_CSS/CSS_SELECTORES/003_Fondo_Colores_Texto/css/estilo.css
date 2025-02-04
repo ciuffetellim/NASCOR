@@ -1,0 +1,13 @@
+body {
+    font-family: Arial, sans-serif;
+    background:url(../img/imagen1.jpg) no-repeat right top;
+    margin: 0;
+    padding: 0;
+}
+.cta-container {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    text-align: center;
+}
