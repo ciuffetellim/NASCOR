@@ -1,0 +1,71 @@
+/*Añade aquí la fuente "Lato" de Google Fonts con @import*/
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Handlee&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Zen+Dots&display=swap');
+* {
+    
+    font-family: 'Lato';
+}
+
+nav ul {
+    margin:0;
+    padding:0;
+    list-style: none;
+    
+}
+
+a
+    {
+    width: 100px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 10px 5px;
+    border-right: 1px solid #336699;
+    display: block;
+}
+
+ul li {
+    float: left;
+}
+
+nav ul a:hover {
+    background-color: #336699;
+}
+
+li:last-child a {
+    border-right: none;
+}
+
+ul.menu {
+    width: 140px;
+    list-style-type: none;
+    border: 1px solid #FFC83D;
+    margin:0;
+    padding:0
+}
+
+
+ul.menu li {
+    border: 1px solid black;
+}
+
+ul.menu li:first-child{
+    border-top: none;
+}
+
+
+  .menu a {
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    padding: 5px;
+    color:black;
+    background-color: orange;
+    border-right: none;
+    
+}
+
+ul.menu li:hover, ul.menu li a:hover {
+    background-color:#c8e2f7 ;
+}
+

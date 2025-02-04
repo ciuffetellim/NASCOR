@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+.cta-container {
+    background-image:url(img/imagen1.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 25vh;
+    height: 100vh;
+    text-shadow: 1px 2px 2px black;
+}
+.card-title{
+    font-size: 5vh;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+}
+.card-description{
+    font-size: 4vh;
+    color: #187a12;
+    text-align: center;
+}
+.card-button {
+    font-size: 2vh;
+    padding: 0.5em 2em; /* em */
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+}
+.cta-button:hover {
+    background-color: #0056b3;
+}
+h2{
+    font-size: 5vh;
+ }
+p{
+    font-size: 3vh;
+    color:greenyellow
+}
+
+
+
+
+.cta-button:hover {
+    background-color: #0056b3;
+}

@@ -1,0 +1,20 @@
+button {
+    color: whitesmoke;
+    background-color: lightseagreen;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+}
+button::first-letter {
+    color: darkblue;
+}
+button:hover {
+    background-color: rgb(239, 91, 106);
+}
+button:hover::before {
+    color: seagreen;
+}
+button:focus::after {
+    color: rgb(77, 6, 16);
+    content: "Ya has vositado este recurso";
+}
