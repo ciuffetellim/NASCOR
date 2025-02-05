@@ -1,60 +1,60 @@
-body, div {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body,
+div {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #faf4f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #faf4f8;
 }
 .galeria {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    width: 80%;
-    max-width: 1200px;
-    padding: 1rem;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 80%;
+  max-width: 1200px;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .circulo {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin: 1rem;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 1rem;
 }
 #circulo1 {
-    width: 150px;
-    height: 150px;
-    background-image:url("../img/imagen1.jpg");
-    border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  background-image: url("../img/imagen1.jpg");
+  border-radius: 50%;
 }
 #circulo2 {
-    width: 150px;
-    height: 150px;
-    background-image: url("../img/imagen1.jpg");
-    border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  background-image: url("../img/imagen1.jpg");
+  border-radius: 50%;
 }
 #circulo3 {
-    width: 150px;
-    height: 150px;
-    background-image: url("../img/imagen1.jpg");
-    border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  background-image: url("../img/imagen1.jpg");
+  border-radius: 50%;
 }
 #circulo4 {
-    width: 150px;
-    height: 150px;
-    background-image: url("../img/imagen1.jpg");
-    border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  background-image: url("../img/imagen1.jpg");
+  border-radius: 50%;
 }
 /*Ajustes Responsive*/
 @media (max-width: 768px) {
-    .galeria {
-        flex-direction: column;
-    }
-
+  .galeria {
+    flex-direction: column;
+  }
 }

@@ -1,0 +1,89 @@
+body{
+    margin: 0;
+}
+
+header{
+    width:100%;
+    height:20vh;
+    background-color: darkseagreen;
+}
+.logo{
+    max-width: 30vh;
+}
+#redes1{
+    max-width: 30vh;
+    margin: 1rem;
+}
+#redes2{
+    max-width: 30vh;
+    margin: 1rem;
+}
+#redes3{
+    max-width: 30vh;
+    margin: 1rem;
+}
+#redes{
+    display: flex;    
+    justify-items: center;    
+    flex-direction: column;
+    padding: 1rem;
+}
+
+footer{
+    width:100%;
+    height:20vh;
+    background-color: darkseagreen;
+}
+nav{
+    width:100%;
+    height:10vh;
+    background-color: rgb(143, 152, 188);
+    padding-top: 3vh;
+}
+nav>button {
+    color: #4CAF50
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+nav a:hover{
+    background-color: #ddd;
+    color: black;
+}
+main{
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    padding: 0;
+    width: 100vw;
+}
+section{
+    width: 60vw;
+    background-color: antiquewhite;
+    float:left;
+    min-height: 80vh;
+    padding: 5vh
+}
+aside{
+    flex: 1;
+    width: 35vw;
+    background-color: rgb(154, 233, 183);
+    min-height: 80vh;
+    float: left;
+}
+@media (max-width: 768px) {
+    section{
+        width: 100vw;
+    }
+    aside{
+        width: 100vw;
+    }
+    #redes{flex-direction: row;}
+ }
+</style>
