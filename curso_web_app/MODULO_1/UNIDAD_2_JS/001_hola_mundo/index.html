@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hola mundo</title>
+    <style>
+        button{
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: lightblue;
+            margin: 30px;
+            width: 100px;
+            height: 50px;
+            cursor: pointer;            
+    }
+    </style>
+</head>
+<body>
+    <button type="button" onclick="alert('hola mundo!!!');">Click aqui</button>
+     
+    
+
+    <script>
+       let boton = document.querySelector('button');
+       
+       boton.addEventListener('mouseleave', function() {
+        alert('Adios mundo!');
+
+       } );
+       let boton1 = document.querySelector('button');
+       boton1.addEventListener('mouseleave', function() {
+            alert('hola mundo!');
+
+       } );
+       
+    </script>
+    
+    
+</body>
+</html>
