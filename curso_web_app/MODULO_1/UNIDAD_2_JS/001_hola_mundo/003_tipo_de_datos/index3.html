@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Array
+        let frutas = [
+            'manzana', //orden 0
+            'naranja', //orden 1
+            'platano', //orden 2
+        ];
+        // Parsear Array objetos
+        let alumnos =[
+            { nombre: 'Andrea', edad: 30},
+            { nombre: 'Jose', edad: 20}
+        ];
+        console.log("Nombre alumno: " + alumnos[1].edad);
+        console.log("<br>Edad del alumno: " +alumnos[0].edad);
+        console.log('Frutas: 1.- ' + frutas[0] + ' 2. ' + frutas[1] + '3.- '+ frutas[2]);
+        let str = 
+        <ol>
+            <li>Nombre del alumno/a: $(alumnos[0].nombre)</li>
+            <li>edad: $alumnos.[0].edad</li>
+        </ol>;
+        document.write(str);
+    </script>
+</body>
+</html>
