@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 1. Imprimir los números pares del 1 al 20 en document.write()
+document.write("<h3>Números pares del 1 al 20:</h3>");
+for (let i = 2; i <= 20; i += 2) {
+    document.write(i + " ");
+}
+
+// 2. Calcular la suma de los primeros 100 números naturales
+let suma = 0;
+for (let i = 1; i <= 100; i++) {
+    suma += i;
+}
+document.write("<h3>Suma de los primeros 100 números naturales:</h3>");
+document.write(suma);
+
+// 3. Imprimir un patrón de asteriscos en forma de triángulo
+document.write("<h3>Patrón de asteriscos en forma de triángulo invertido:</h3>");
+let n = 5; // Puedes cambiar este valor para hacer el triángulo más grande
+for (let i = n; i >= 1; i--) {
+    document.write("*".repeat(i) + "<br>");
+}
+
+
+    </script>
+</body>
+
+</html>

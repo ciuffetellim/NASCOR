@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const numeroCorrecto = 5 + 9;
+        let respuestaUsuario = parseInt(prompt("Comprobamos que eres humano ¿Cuánto es 5 + 9?"));
+
+if (respuestaUsuario === numeroCorrecto) {
+    document.write('Resultado correcto!  Bienvenido!  <br>');
+    // Aquí podrías continuar con el proceso de login
+} else {
+    alert("Error: Respuesta incorrecta. Inténtalo de nuevo.");
+    window.location.reload();
+}
+
+    </script>
+</body>
+</html>
