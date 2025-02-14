@@ -1,16 +1,16 @@
-// Función para calcular la media de un array de notas
+// Función para calcular la media
 function calcularMedia(notas) {
     let suma = notas.reduce((acc, nota) => acc + nota, 0);
-    return (suma / notas.length).toFixed(2); // Redondear a 2 decimales
+    return (suma / notas.length).toFixed(2); // Poner 2 decimales
 }
 
-// Función para determinar la calificación final según la media
+// determinar la calificación final con la media
 function obtenerCalificacion(media) {
-    if (media < 5) return "Suspenso";
-    if (media >= 5 && media < 6) return "Suficiente";
-    if (media >= 6 && media < 7) return "Bien";
-    if (media >= 7 && media < 8) return "Notable";
-    return "Sobresaliente"; // Para calificaciones de 8 a 10
+    if (media < 5) return "Suspenso"; //suspendido
+    if (media >= 5 && media < 6) return "Suficiente"; //Suficiente
+    if (media >= 6 && media < 7) return "Bien"; //Bien
+    if (media >= 7 && media < 8) return "Notable"; //Notable
+    return "Sobresaliente"; // Sobresaliente
 }
 
 // Solicitar el nombre del alumno
@@ -18,7 +18,7 @@ let nombre = prompt("Introduce el nombre del alumno:");
 // Solicitar el Apellidos del alumno
 let apellidos = prompt("Introduce los apellidos del alumno:");
 
-// Solicitar las 5 notas y almacenarlas en un array
+// Solicitar las 5 notas y almacenarlas
 let notas = [];
 for (let i = 0; i < 5; i++) {
     let nota = parseFloat(prompt(`Introduce la nota ${i + 1}:`));
@@ -35,7 +35,7 @@ let media = calcularMedia(notas);
 let calificacion = obtenerCalificacion(media);
 
 // Mostrar resultados
-document.write(`<h2>Resultados del Alumno</h2>`);
+document.write(`<h2>Resultados Notas del Alumno</h2>`);
 document.write(`<p><strong>Nombre:</strong> ${nombre}</p>`);
 document.write(`<p><strong>Apellidos:</strong> ${apellidos}</p>`);
 document.write(`<p><strong>Notas:</strong> ${notas.join(", ")}</p>`);
