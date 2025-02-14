@@ -35,10 +35,15 @@ let media = calcularMedia(notas);
 let calificacion = obtenerCalificacion(media);
 
 // Mostrar resultados
-document.write(`<h2>Resultados Notas del Alumno</h2>`);
+document.write(`<h2>Resultados Notas final Alumno</h2>`);
 document.write(`<p><strong>Nombre:</strong> ${nombre}</p>`);
 document.write(`<p><strong>Apellidos:</strong> ${apellidos}</p>`);
-document.write(`<p><strong>Notas:</strong> ${notas.join(", ")}</p>`);
+document.write(`<p><strong>Calificación Final:</strong> ${calificacion}</p>`);
+//mostrar resultados detallado
+document.write(`<h2>Resultados notas detalladas del Alumno</h2>`);
+notas.forEach((nota, index) => {
+    document.write(`<p><strong>Nota ${index + 1}:</strong> ${nota}</p>`);
+});
 document.write(`<p><strong>Media:</strong> ${media}</p>`);
 document.write(`<p><strong>Calificación Final:</strong> ${calificacion}</p>`);
 
