@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Frase a modificar</h2>
+    <p id="sentence">Esta es una frase de ejemplo.</p>
+    <button id="replaceButton">Reemplazar palabra</button>
+
+    <script>
+        document.getElementById("replaceButton").addEventListener("click", function() {
+            const wordToReplace = prompt("Introduce la palabra que quieres reemplazar:");
+            const replacementWord = prompt("Introduce la nueva palabra:");
+            const sentenceElement = document.getElementById("sentence");
+            const sentenceText = sentenceElement.textContent;
+            const newSentence = sentenceText.replace(wordToReplace, replacementWord);
+            sentenceElement.textContent = newSentence;
+        });
+    </script>
+</body>
+</html>
