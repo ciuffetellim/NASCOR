@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Reemplazar Palabra</title>
+</head>
+<body>
+    <h1>Reemplazar Palabra en una Frase</h1>
+    <p id="frase">La programación es divertida y desafiante.</p>
+    <button id="botonReemplazar">Reemplazar palabra</button>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Selecciona el botón y la frase
+            let boton = document.getElementById('botonReemplazar');
+            let parrafo = document.getElementById('frase');
+
+            // Añade un event listener al botón
+            boton.addEventListener('click', function() {
+                // Solicita la palabra a reemplazar
+                let palabraAReemplazar = prompt('Introduce la palabra que deseas reemplazar:');
+                if (!palabraAReemplazar) {
+                    alert('No se ha introducido ninguna palabra a reemplazar.');
+                    return;
+                }
+
+                // Solicita la nueva palabra
+                let nuevaPalabra = prompt('Introduce la nueva palabra:');
+                if (!nuevaPalabra) {
+                    alert('No se ha introducido ninguna nueva palabra.');
+                    return;
+                }
+
+                // Obtiene el texto actual del párrafo
+                let textoActual = parrafo.textContent;
+
+                // Verifica si la palabra a reemplazar existe en el texto
+                if (!textoActual.includes(palabraAReemplazar)) {
+                    alert(`La palabra "${palabraAReemplazar}" no se encontró en la frase.`);
+                    return;
+                }
+
+                //Crea una expresión regular para reemplazar todas las ocurrencias de la palabra
+                let nuevaExpresion = new RegExp(palabraAReemplazar, 'g');
+
+                // Reemplaza la palabra y actualiza el contenido del párrafo
+                let nuevoTexto = textoActual.replace(nuevaExpresion, nuevaPalabra);
+                parrafo.textContent = nuevoTexto;
+            });
+        });
+    </script>
+</body>
+</html>

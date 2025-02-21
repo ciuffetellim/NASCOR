@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>split</title>
+</head>
+<body>
+    <h2>Introduce una frase</h2>
+    <form id="formulario">
+        <input type="text" id="frase">
+        <button type="submit">Dividir</button>
+    </form>
+    <h2>la lista</h2>
+    <ul id="miLista"></ul>
+    <script>
+        let formulario = document.querySelector('#formulario');
+        let frase = document.querySelector('#frase');
+        let miLista = document.querySelector('#miLista');
+        formulario.addEventListener('submit', function(e){
+            e.preventDefault();
+            const frase = document.getElementById("frase").value;
+            const palabra = frase.split(" ");
+            const lista = document.getElementById("miLista");
+            lista.innerHTML = " ";
+            palabra.forEach(palabra => {
+                const li = document.createElement("li");
+                li.textContent = palabra;
+                lista.appendChild(li);
+            });
+        });
+    </script>
+</body>
+</html>
