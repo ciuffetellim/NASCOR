@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #contenedor {
+            background-color: rgb(59, 91, 220);
+            width: 100%;
+            height: 400px;
+        }
+        /*pulsar y cambia color*/
+        h1 {
+            color: rgb(22, 2, 2);
+            margin: 10px 10px;
+        }
+        #botonsubmit {
+            background-color: rgb(195, 211, 91);
+            width: 150px;
+            padding: 20px 40px;
+            border-radius: 5px;
+            margin: 10px 10px;
+        }
+        input[type="number"]{
+            font-family: Arial, sans-serif;
+            font-size:22px;
+            height: 30px;
+            margin: 10px 10px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div id="contenedor">
+        <h1>Ingresa dos números para ver cuál es mayor</h1>
+        <form id="formulario">
+            <label for="num1">primer número</label>
+            <input name="num1" id="num1" type="number" required><br>
+            <label for="num2">segundo número</label>
+            <input name="num2" id="num2" type="number" required><br>
+            <input type="submit" value="Comprobar" id="botonsubmit">
+        </form>
+        <div id="mensaje"></div>
+    </div>
+    <script>
+        //para ir al Formulario
+        let formulario = document.getElementById('formulario');
+        formulario.addEventListener('submit', function(e){
+            e.preventDefault();
+            let num1 = parseFloat(document.getElementById('num1').value);
+            let num2 = parseFloat(document.getElementById('num2').value);
+            let numeros = [num1, num2];
+            let mayor = Math.max(...numeros);
+            let mensaje = "Has ingresado los números " + num1 + " y " + num2 + " y el mayor es " + mayor;
+            document.getElementById('mensaje').innerHTML = "<h1>" + mensaje + "</h1>";
+        });
+        
+    </script>
+
+</body>
+</html>
