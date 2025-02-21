@@ -8,11 +8,11 @@
 <body>
     <h2>Introduce una frase</h2>
     <input type="text" id="frase">
-    <button onclick="splitFrase()">Dividir</button>
+    <button onclick="divideFrase()">Dividir</button>
     <ul id="miLista"></ul>
 
     <script>
-        function splitFrase() {
+        function divideFrase() {
             const frase = document.getElementById("frase").value;
             const palabra = frase.split(" ");
             const lista = document.getElementById("miLista");
