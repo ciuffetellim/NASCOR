@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Introduce una frase</h2>
+    <input type="text" id="frase">
+    <button onclick="splitFrase()">Dividir</button>
+    <ul id="miLista"></ul>
+
+    <script>
+        function splitFrase() {
+            const frase = document.getElementById("frase").value;
+            const palabra = frase.split(" ");
+            const lista = document.getElementById("miLista");
+            lista.innerHTML = " ";
+            palabra.forEach(palabra => {
+                const li = document.createElement("li");
+                li.textContent = palabra;
+                lista.appendChild(li);
+            });
+        }
+    </script>
+    
+</body>
+</html>
