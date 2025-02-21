@@ -21,13 +21,20 @@
     </style>
 </head>
 <body>
-    <div id="contenedor">
-        <button id="cambiacolor">Cambia Color</button>
-    </div>
+    <div id="contenedor"></div>
+    <button id="cambiacolor">Cambia Color</button>
     <script>
         function getRandomColor() {
-            return "#" + Math.floor(Math.random) * 167777215)
-        }
+            return "#" + Math.floor(Math.random()*16777215).toString(16);
+            }            
+        let contenedor = document.getElementById('contenedor');
+        let boton = document.getElementById('cambiacolor');
+        boton.addEventListener('click', function(){
+            let color = Math.floor(Math.random()*16777215).toString(16);
+            contenedor.style.backgroundColor = '#' + color;
+            contenedor.innerHTML = getRandomColor();
+        });
+          
     </script>
 </body>
 </html>
